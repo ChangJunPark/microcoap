@@ -1,0 +1,129 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+COAP_CONTENTTYPE_APPLICATION_EXI	coap.h	/^    COAP_CONTENTTYPE_APPLICATION_EXI = 47,$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_APPLICATION_JSON	coap.h	/^    COAP_CONTENTTYPE_APPLICATION_JSON = 50,$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_APPLICATION_LINKFORMAT	coap.h	/^    COAP_CONTENTTYPE_APPLICATION_LINKFORMAT = 40,$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_APPLICATION_OCTECT_STREAM	coap.h	/^    COAP_CONTENTTYPE_APPLICATION_OCTECT_STREAM = 42,$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_APPLICATION_XML	coap.h	/^    COAP_CONTENTTYPE_APPLICATION_XML = 41,$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_NONE	coap.h	/^    COAP_CONTENTTYPE_NONE = -1, \/\/ bodge to allow us not to send option block$/;"	e	enum:__anon10
+COAP_CONTENTTYPE_TEXT_PLAIN	coap.h	/^    COAP_CONTENTTYPE_TEXT_PLAIN = 0,$/;"	e	enum:__anon10
+COAP_ERR_BUFFER_TOO_SMALL	coap.h	/^    COAP_ERR_BUFFER_TOO_SMALL = 9,$/;"	e	enum:__anon11
+COAP_ERR_HEADER_TOO_SHORT	coap.h	/^    COAP_ERR_HEADER_TOO_SHORT = 1,$/;"	e	enum:__anon11
+COAP_ERR_NONE	coap.h	/^    COAP_ERR_NONE = 0,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_DELTA_INVALID	coap.h	/^    COAP_ERR_OPTION_DELTA_INVALID = 11,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_LEN_INVALID	coap.h	/^    COAP_ERR_OPTION_LEN_INVALID = 8,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_OVERRUNS_PACKET	coap.h	/^    COAP_ERR_OPTION_OVERRUNS_PACKET = 6,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_TOO_BIG	coap.h	/^    COAP_ERR_OPTION_TOO_BIG = 7,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_TOO_SHORT	coap.h	/^    COAP_ERR_OPTION_TOO_SHORT = 5,$/;"	e	enum:__anon11
+COAP_ERR_OPTION_TOO_SHORT_FOR_HEADER	coap.h	/^    COAP_ERR_OPTION_TOO_SHORT_FOR_HEADER = 4,$/;"	e	enum:__anon11
+COAP_ERR_TOKEN_TOO_SHORT	coap.h	/^    COAP_ERR_TOKEN_TOO_SHORT = 3,$/;"	e	enum:__anon11
+COAP_ERR_UNSUPPORTED	coap.h	/^    COAP_ERR_UNSUPPORTED = 10,$/;"	e	enum:__anon11
+COAP_ERR_VERSION_NOT_1	coap.h	/^    COAP_ERR_VERSION_NOT_1 = 2,$/;"	e	enum:__anon11
+COAP_H	coap.h	/^#define COAP_H /;"	d
+COAP_METHOD_DELETE	coap.h	/^    COAP_METHOD_DELETE = 4,$/;"	e	enum:__anon7
+COAP_METHOD_GET	coap.h	/^    COAP_METHOD_GET = 1,$/;"	e	enum:__anon7
+COAP_METHOD_HEAD	coap.h	/^    COAP_METHOD_HEAD = 5,$/;"	e	enum:__anon7
+COAP_METHOD_OPTIONS	coap.h	/^    COAP_METHOD_OPTIONS = 6,$/;"	e	enum:__anon7
+COAP_METHOD_POST	coap.h	/^    COAP_METHOD_POST = 2,$/;"	e	enum:__anon7
+COAP_METHOD_PUT	coap.h	/^    COAP_METHOD_PUT = 3,$/;"	e	enum:__anon7
+COAP_METHOD_TRACE	coap.h	/^    COAP_METHOD_TRACE = 7$/;"	e	enum:__anon7
+COAP_OPTION_ACCEPT	coap.h	/^    COAP_OPTION_ACCEPT = 17,$/;"	e	enum:__anon6
+COAP_OPTION_CONTENT_FORMAT	coap.h	/^    COAP_OPTION_CONTENT_FORMAT = 12,$/;"	e	enum:__anon6
+COAP_OPTION_ETAG	coap.h	/^    COAP_OPTION_ETAG = 4,$/;"	e	enum:__anon6
+COAP_OPTION_IF_MATCH	coap.h	/^    COAP_OPTION_IF_MATCH = 1,$/;"	e	enum:__anon6
+COAP_OPTION_IF_NONE_MATCH	coap.h	/^    COAP_OPTION_IF_NONE_MATCH = 5,$/;"	e	enum:__anon6
+COAP_OPTION_LOCATION_PATH	coap.h	/^    COAP_OPTION_LOCATION_PATH = 8,$/;"	e	enum:__anon6
+COAP_OPTION_LOCATION_QUERY	coap.h	/^    COAP_OPTION_LOCATION_QUERY = 20,$/;"	e	enum:__anon6
+COAP_OPTION_MAX_AGE	coap.h	/^    COAP_OPTION_MAX_AGE = 14,$/;"	e	enum:__anon6
+COAP_OPTION_OBSERVE	coap.h	/^    COAP_OPTION_OBSERVE = 6,$/;"	e	enum:__anon6
+COAP_OPTION_PROXY_SCHEME	coap.h	/^    COAP_OPTION_PROXY_SCHEME = 39$/;"	e	enum:__anon6
+COAP_OPTION_PROXY_URI	coap.h	/^    COAP_OPTION_PROXY_URI = 35,$/;"	e	enum:__anon6
+COAP_OPTION_URI_HOST	coap.h	/^    COAP_OPTION_URI_HOST = 3,$/;"	e	enum:__anon6
+COAP_OPTION_URI_PATH	coap.h	/^    COAP_OPTION_URI_PATH = 11,$/;"	e	enum:__anon6
+COAP_OPTION_URI_PORT	coap.h	/^    COAP_OPTION_URI_PORT = 7,$/;"	e	enum:__anon6
+COAP_OPTION_URI_QUERY	coap.h	/^    COAP_OPTION_URI_QUERY = 15,$/;"	e	enum:__anon6
+COAP_RSPCODE_BAD_REQUEST	coap.h	/^    COAP_RSPCODE_BAD_REQUEST = MAKE_RSPCODE(4, 0),$/;"	e	enum:__anon9
+COAP_RSPCODE_CHANGED	coap.h	/^    COAP_RSPCODE_CHANGED = MAKE_RSPCODE(2, 4)$/;"	e	enum:__anon9
+COAP_RSPCODE_CONTENT	coap.h	/^    COAP_RSPCODE_CONTENT = MAKE_RSPCODE(2, 5),$/;"	e	enum:__anon9
+COAP_RSPCODE_NOT_FOUND	coap.h	/^    COAP_RSPCODE_NOT_FOUND = MAKE_RSPCODE(4, 4),$/;"	e	enum:__anon9
+COAP_TYPE_ACK	coap.h	/^    COAP_TYPE_ACK = 2,$/;"	e	enum:__anon8
+COAP_TYPE_CON	coap.h	/^    COAP_TYPE_CON = 0,$/;"	e	enum:__anon8
+COAP_TYPE_NONCON	coap.h	/^    COAP_TYPE_NONCON = 1,$/;"	e	enum:__anon8
+COAP_TYPE_RESET	coap.h	/^    COAP_TYPE_RESET = 3$/;"	e	enum:__anon8
+DEPS	Makefile	/^DEPS = $(SRC:%.c=%.d)$/;"	m
+EXEC	Makefile	/^EXEC = coap$/;"	m
+MAKE_RSPCODE	coap.h	/^#define MAKE_RSPCODE(/;"	d
+MAXOPT	coap.h	/^#define MAXOPT /;"	d
+MAX_SEGMENTS	coap.h	/^#define MAX_SEGMENTS /;"	d
+OBJ	Makefile	/^OBJ = $(SRC:%.c=%.o)$/;"	m
+PORT	main-posix.c	/^#define PORT /;"	d	file:
+SRC	Makefile	/^SRC = $(wildcard *.c)$/;"	m
+buf	coap.h	/^    coap_buffer_t buf;          \/* Option value *\/$/;"	m	struct:__anon4
+build_rsp	endpoints.c	/^void build_rsp(void)$/;"	f
+coap_buffer_t	coap.h	/^} coap_buffer_t;$/;"	t	typeref:struct:__anon2
+coap_buffer_to_string	coap.c	/^int coap_buffer_to_string(char *strbuf, size_t strbuflen, const coap_buffer_t *buf)$/;"	f
+coap_build	coap.c	/^int coap_build(uint8_t *buf, size_t *buflen, const coap_packet_t *pkt)$/;"	f
+coap_content_type_t	coap.h	/^} coap_content_type_t;$/;"	t	typeref:enum:__anon10
+coap_dump	coap.c	/^void coap_dump(const uint8_t *buf, size_t buflen, bool bare)$/;"	f
+coap_dumpHeader	coap.c	/^void coap_dumpHeader(coap_header_t *hdr)$/;"	f
+coap_dumpOptions	coap.c	/^void coap_dumpOptions(coap_option_t *opts, size_t numopt)$/;"	f
+coap_dumpPacket	coap.c	/^void coap_dumpPacket(coap_packet_t *pkt)$/;"	f
+coap_endpoint_func	coap.h	/^typedef int (*coap_endpoint_func)(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt, uint8_t id_hi, uint8_t id_lo);$/;"	t
+coap_endpoint_path_t	coap.h	/^} coap_endpoint_path_t;$/;"	t	typeref:struct:__anon12
+coap_endpoint_t	coap.h	/^} coap_endpoint_t;$/;"	t	typeref:struct:__anon13
+coap_error_t	coap.h	/^} coap_error_t;$/;"	t	typeref:enum:__anon11
+coap_findOptions	coap.c	/^const coap_option_t *coap_findOptions(const coap_packet_t *pkt, uint8_t num, uint8_t *count)$/;"	f
+coap_handle_req	coap.c	/^int coap_handle_req(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt)$/;"	f
+coap_header_t	coap.h	/^} coap_header_t;$/;"	t	typeref:struct:__anon1
+coap_make_response	coap.c	/^int coap_make_response(coap_rw_buffer_t *scratch, coap_packet_t *pkt, const uint8_t *content, size_t content_len, uint8_t msgid_hi, uint8_t msgid_lo, const coap_buffer_t* tok, coap_responsecode_t rspcode, coap_content_type_t content_type)$/;"	f
+coap_method_t	coap.h	/^} coap_method_t;$/;"	t	typeref:enum:__anon7
+coap_msgtype_t	coap.h	/^} coap_msgtype_t;$/;"	t	typeref:enum:__anon8
+coap_option_nibble	coap.c	/^void coap_option_nibble(uint32_t value, uint8_t *nibble)$/;"	f
+coap_option_num_t	coap.h	/^} coap_option_num_t;$/;"	t	typeref:enum:__anon6
+coap_option_t	coap.h	/^} coap_option_t;$/;"	t	typeref:struct:__anon4
+coap_packet_t	coap.h	/^} coap_packet_t;$/;"	t	typeref:struct:__anon5
+coap_parse	coap.c	/^int coap_parse(coap_packet_t *pkt, const uint8_t *buf, size_t buflen)$/;"	f
+coap_parseHeader	coap.c	/^int coap_parseHeader(coap_header_t *hdr, const uint8_t *buf, size_t buflen)$/;"	f
+coap_parseOption	coap.c	/^int coap_parseOption(coap_option_t *option, uint16_t *running_delta, const uint8_t **buf, size_t buflen)$/;"	f
+coap_parseOptionsAndPayload	coap.c	/^int coap_parseOptionsAndPayload(coap_option_t *options, uint8_t *numOptions, coap_buffer_t *payload, const coap_header_t *hdr, const uint8_t *buf, size_t buflen)$/;"	f
+coap_parseToken	coap.c	/^int coap_parseToken(coap_buffer_t *tokbuf, const coap_header_t *hdr, const uint8_t *buf, size_t buflen)$/;"	f
+coap_responsecode_t	coap.h	/^} coap_responsecode_t;$/;"	t	typeref:enum:__anon9
+coap_rw_buffer_t	coap.h	/^} coap_rw_buffer_t;$/;"	t	typeref:struct:__anon3
+coap_setup	coap.c	/^void coap_setup(void)$/;"	f
+code	coap.h	/^    uint8_t code;               \/* CoAP status code. Can be request (0.xx), success reponse (2.xx),$/;"	m	struct:__anon1
+core_attr	coap.h	/^    const char *core_attr;              \/* the 'ct' attribute, as defined in RFC7252, section 7.2.1.:$/;"	m	struct:__anon13
+count	coap.h	/^    int count;$/;"	m	struct:__anon12
+elems	coap.h	/^    const char *elems[MAX_SEGMENTS];$/;"	m	struct:__anon12
+endpoint_setup	endpoints.c	/^void endpoint_setup(void)$/;"	f
+endpoints	endpoints.c	/^const coap_endpoint_t endpoints[] =$/;"	v
+handle_get_light	endpoints.c	/^static int handle_get_light(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt, uint8_t id_hi, uint8_t id_lo)$/;"	f	file:
+handle_get_well_known_core	endpoints.c	/^static int handle_get_well_known_core(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt, uint8_t id_hi, uint8_t id_lo)$/;"	f	file:
+handle_put_light	endpoints.c	/^static int handle_put_light(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt, uint8_t id_hi, uint8_t id_lo)$/;"	f	file:
+handler	coap.h	/^    coap_endpoint_func handler;         \/* callback function which handles this$/;"	m	struct:__anon13
+hdr	coap.h	/^    coap_header_t hdr;          \/* Header of the packet *\/$/;"	m	struct:__anon5
+id	coap.h	/^    uint8_t id[2];$/;"	m	struct:__anon1
+led	endpoints.c	/^static int led = 6;$/;"	v	file:
+len	coap.h	/^    size_t len;$/;"	m	struct:__anon2
+len	coap.h	/^    size_t len;$/;"	m	struct:__anon3
+light	endpoints.c	/^static char light = '0';$/;"	v	file:
+main	main-posix.c	/^int main(int argc, char **argv)$/;"	f
+method	coap.h	/^    coap_method_t method;               \/* (i.e. POST, PUT or GET) *\/$/;"	m	struct:__anon13
+num	coap.h	/^    uint8_t num;                \/* Option number. See http:\/\/tools.ietf.org\/html\/rfc7252#section-5.10 *\/$/;"	m	struct:__anon4
+numopts	coap.h	/^    uint8_t numopts;            \/* Number of options *\/$/;"	m	struct:__anon5
+opts	coap.h	/^    coap_option_t opts[MAXOPT]; \/* Options of the packet. For possible entries see$/;"	m	struct:__anon5
+p	coap.h	/^    const uint8_t *p;$/;"	m	struct:__anon2
+p	coap.h	/^    uint8_t *p;$/;"	m	struct:__anon3
+path	coap.h	/^    const coap_endpoint_path_t *path;   \/* path towards a resource (i.e. foo\/bar\/) *\/$/;"	m	struct:__anon13
+path_light	endpoints.c	/^static const coap_endpoint_path_t path_light = {1, {"light"}};$/;"	v	file:
+path_well_known_core	endpoints.c	/^static const coap_endpoint_path_t path_well_known_core = {2, {".well-known", "core"}};$/;"	v	file:
+payload	coap.h	/^    coap_buffer_t payload;      \/* Payload carried by the packet *\/$/;"	m	struct:__anon5
+rsp	endpoints.c	/^static char rsp[1500] = "";$/;"	v	file:
+rsplen	endpoints.c	/^const uint16_t rsplen = 1500;$/;"	v
+t	coap.h	/^    uint8_t t;                  \/* CoAP Message Type *\/$/;"	m	struct:__anon1
+tkl	coap.h	/^    uint8_t tkl;                \/* Token length: indicates length of the Token field *\/$/;"	m	struct:__anon1
+tok	coap.h	/^    coap_buffer_t tok;          \/* Token value, size as specified by hdr.tkl *\/$/;"	m	struct:__anon5
+ver	coap.h	/^    uint8_t ver;                \/* CoAP version number *\/$/;"	m	struct:__anon1

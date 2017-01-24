@@ -12,8 +12,8 @@ void build_rsp(void);
 #include "Arduino.h"
 static int led = 6;
 void endpoint_setup(void)
-{                
-    pinMode(led, OUTPUT);     
+{
+    pinMode(led, OUTPUT);
     build_rsp();
 }
 #else
