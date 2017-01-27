@@ -17,8 +17,8 @@ typedef struct
     uint8_t ver;                /* CoAP version number */
     uint8_t t;                  /* CoAP Message Type */
     uint8_t tkl;                /* Token length: indicates length of the Token field */
-    uint8_t code;               /* CoAP status code. Can be request (0.xx), success reponse (2.xx), 
-                                 * client error response (4.xx), or rever error response (5.xx) 
+    uint8_t code;               /* CoAP status code. Can be request (0.xx), success reponse (2.xx),
+                                 * client error response (4.xx), or rever error response (5.xx)
                                  * For possible values, see http://tools.ietf.org/html/rfc7252#section-12.1 */
     uint8_t id[2];
 } coap_header_t;
@@ -79,7 +79,11 @@ typedef enum
     COAP_METHOD_GET = 1,
     COAP_METHOD_POST = 2,
     COAP_METHOD_PUT = 3,
-    COAP_METHOD_DELETE = 4
+    COAP_METHOD_DELETE = 4,
+    /**** Pusan National University  infosec&iot extension ****/
+    COAP_METHOD_HEAD = 5,
+    COAP_METHOD_OPTIONS = 6,
+    COAP_METHOD_TRACE = 7
 } coap_method_t;
 
 //http://tools.ietf.org/html/rfc7252#section-12.1.1
@@ -96,10 +100,25 @@ typedef enum
 #define MAKE_RSPCODE(clas, det) ((clas << 5) | (det))
 typedef enum
 {
+	//TODO 새로운 메서드에 대한 response code 생성
+	COAP_RSPCODE_CREATED = MAKE_RSPCODE(2, 1),
+    COAP_RSPCODE_DELETED = MAKE_RSPCODE(2, 2),
+    COAP_RSPCODE_VALID   = MAKE_RSPCODE(2, 3),
+    COAP_RSPCODE_CHANGED = MAKE_RSPCODE(2, 4),
     COAP_RSPCODE_CONTENT = MAKE_RSPCODE(2, 5),
-    COAP_RSPCODE_NOT_FOUND = MAKE_RSPCODE(4, 4),
     COAP_RSPCODE_BAD_REQUEST = MAKE_RSPCODE(4, 0),
-    COAP_RSPCODE_CHANGED = MAKE_RSPCODE(2, 4)
+    COAP_RSPCODE_UNAUTHORIZED = MAKE_RSPCODE(4, 1),
+    COAP_RSPCODE_BAD_OPTION = MAKE_RSPCODE(4, 2),
+    COAP_RSPCODE_FORBIDDEN = MAKE_RSPCODE(4, 3),
+    COAP_RSPCODE_NOT_FOUND = MAKE_RSPCODE(4, 4),
+    COAP_RSPCODE_METHOD_NOT_ALLOWED = MAKE_RSPCODE(4, 5),
+    COAP_RSPCODE_NOT_ACCEPTABLE = MAKE_RSPCODE(4, 6),
+    COAP_RSPCODE_INTERNAL_SERVER_ERROR = MAKE_RSPCODE(5, 0),
+    COAP_RSPCODE_NOT_IMPLEMENTED = MAKE_RSPCODE(5, 1),
+    COAP_RSPCODE_BAD_GATEWAY = MAKE_RSPCODE(5, 2),
+    COAP_RSPCODE_SERVICE_UNAVAILABLE = MAKE_RSPCODE(5, 3),
+    COAP_RSPCODE_GATEWAY_TIMEOUT = MAKE_RSPCODE(5, 4),
+    COAP_RSPCODE_PROXYING_NOT_SUPPORTED = MAKE_RSPCODE(5, 5)
 } coap_responsecode_t;
 
 //http://tools.ietf.org/html/rfc7252#section-12.3
@@ -145,14 +164,14 @@ typedef struct
 typedef struct
 {
     coap_method_t method;               /* (i.e. POST, PUT or GET) */
-    coap_endpoint_func handler;         /* callback function which handles this 
-                                         * type of endpoint (and calls 
+    coap_endpoint_func handler;         /* callback function which handles this
+                                         * type of endpoint (and calls
                                          * coap_make_response() at some point) */
-    const coap_endpoint_path_t *path;   /* path towards a resource (i.e. foo/bar/) */ 
+    const coap_endpoint_path_t *path;   /* path towards a resource (i.e. foo/bar/) */
     const char *core_attr;              /* the 'ct' attribute, as defined in RFC7252, section 7.2.1.:
-                                         * "The Content-Format code "ct" attribute 
-                                         * provides a hint about the 
-                                         * Content-Formats this resource returns." 
+                                         * "The Content-Format code "ct" attribute
+                                         * provides a hint about the
+                                         * Content-Formats this resource returns."
                                          * (Section 12.3. lists possible ct values.) */
 } coap_endpoint_t;
 

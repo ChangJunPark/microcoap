@@ -1,3 +1,13 @@
+/*
+ ============================================================================
+ Name        : coap.c
+ Author      : changjun
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -284,7 +294,7 @@ int coap_build(uint8_t *buf, size_t *buflen, const coap_packet_t *pkt)
     p = buf + 4;
     if ((pkt->hdr.tkl > 0) && (pkt->hdr.tkl != pkt->tok.len))
         return COAP_ERR_UNSUPPORTED;
-    
+
     if (pkt->hdr.tkl > 0)
         memcpy(p, pkt->tok.p, pkt->hdr.tkl);
 
@@ -361,6 +371,7 @@ void coap_option_nibble(uint32_t value, uint8_t *nibble)
     }
 }
 
+//TODO coap_make_response 이걸 사용해서 response 생성해야 함
 int coap_make_response(coap_rw_buffer_t *scratch, coap_packet_t *pkt, const uint8_t *content, size_t content_len, uint8_t msgid_hi, uint8_t msgid_lo, const coap_buffer_t* tok, coap_responsecode_t rspcode, coap_content_type_t content_type)
 {
     pkt->hdr.ver = 0x01;
