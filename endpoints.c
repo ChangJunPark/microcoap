@@ -128,6 +128,7 @@ static int handle_trace_light(coap_rw_buffer_t *scratch, const coap_packet_t *in
 	uint8_t tracePayload [4096];
 	if(coap_build(tracePayload,&payloadsize, inpkt))
 		return coap_make_response(scratch, outpkt, tracePayload, payloadsize, id_hi, id_lo, &inpkt->tok, COAP_RSPCODE_CONTENT, COAP_CONTENTTYPE_TEXT_PLAIN);
+    return coap_make_response(scratch, outpkt, NULL, 0, inpkt->hdr.id[0], inpkt->hdr.id[1], &inpkt->tok, COAP_RSPCODE_NOT_FOUND, COAP_CONTENTTYPE_NONE);
 }
 
 /*
