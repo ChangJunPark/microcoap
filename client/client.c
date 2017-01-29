@@ -17,10 +17,27 @@
 
 #define BUF_SIZE 1024
 
+void getCode(const uint8_t *coap){
+    //aaa.bbbbb
+    int i;
+    unsigned char a,b;
+    uint8_t tmp = *(++coap);
+
+    a = tmp;
+    a/=32;
+    b = tmp;
+    b*=8;
+    b/=8;
+    // for (i = 7; i >= 0; --i)
+    //   printf("%d", (tmp>>i)&1);
+    
+    printf("%d.0%d\n",a,b );
+}
+
 void dump(const uint8_t *buf, int len)
 {
-  while(len--)
-            printf("%02X%s", *buf++, (len > 0) ? " " : "\n");
+    while(len--)
+        printf("%02X%s", *buf++, (len > 0) ? " " : "\n");
 }
 
 
@@ -209,13 +226,15 @@ int main( int argc, char *argv[])
    }
 
 
-   printf( "send: %d\n", send_size);
+   printf( "send: %d \tcode: ", send_size);
+   getCode(buff_send);
    dump(buff_send,send_size);
    sendto( sock, buff_send, send_size, 0, ( struct sockaddr*)&server_addr, sizeof( server_addr));
 
    server_addr_size  = sizeof( server_addr);
    rcv_size = recvfrom( sock, buff_rcv, BUF_SIZE, 0 , ( struct sockaddr*)&server_addr, &server_addr_size);
-   printf( "receive: %d\n", rcv_size);
+   printf( "receive: %d \tcode: ", rcv_size);
+   getCode(buff_rcv);
    dump(buff_rcv,rcv_size);
    close( sock);
 
