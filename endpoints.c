@@ -118,6 +118,7 @@ static int handle_head_light(coap_rw_buffer_t *scratch, const coap_packet_t *inp
 //TODO OPTIONS가 문젠데.. Allow 정보를 payload에 올릴  -> 무조건 2.05 & payload 에 allow 정보
 static int handle_options_light(coap_rw_buffer_t *scratch, const coap_packet_t *inpkt, coap_packet_t *outpkt, uint8_t id_hi, uint8_t id_lo)
 {
+    printf("call Options: %s \n",allow);
     return coap_make_response(scratch, outpkt, allow, sizeof(allow), id_hi, id_lo, &inpkt->tok, COAP_RSPCODE_CONTENT, COAP_CONTENTTYPE_TEXT_PLAIN);
 }
 
